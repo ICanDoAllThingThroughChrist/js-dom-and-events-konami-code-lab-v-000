@@ -9,7 +9,6 @@ document.body.addEventListener('keydown',function(e)
   console.log(key);
   debugger;
   console.log(code[index])
-  if(key === code[index])
 })
 //events parameters: https://www.w3schools.com/jsref/dom_obj_event.asp
 //check for 'keydown' events. If the user enters this special code,
