@@ -4,7 +4,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 function init() {
 let index = 0
 document.body.addEventListener('keydown',function(e)
-{
+{//https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
   //get value of key code from key map
   var key = code[e.keycode]
   //compare e.which with code
