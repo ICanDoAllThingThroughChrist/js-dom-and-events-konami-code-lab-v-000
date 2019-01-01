@@ -5,7 +5,7 @@ function init() {
 let index = 0;
 function onKeyDownHandler(e) {//https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
   //get value of key code from key map
-  var key = code[e.keycode]
+  const key = parseInt(e.keycode||e.which)
   //compare e.which with code
   if(e.which === code[index]){
     //move to the next key in the code sequence
