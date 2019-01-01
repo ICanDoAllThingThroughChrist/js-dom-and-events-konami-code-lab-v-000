@@ -2,9 +2,8 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 //You'll want to attach an event listener to document.body and
 //keep track of index outside of the event handler
 function init() {
-let index = 0
-function onKeyDownHandler(e)
-{//https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
+let index = 0;
+function onKeyDownHandler(e) {//https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html
   //get value of key code from key map
   var key = code[e.keycode]
   //compare e.which with code
@@ -20,7 +19,8 @@ function onKeyDownHandler(e)
   } else {
     index = 0
   }
-});
+}
+document.addEventListener('keydown', onKeyDownHandler);
   // Write your JavaScript code inside the init() function
 }
 //events parameters: https://www.w3schools.com/jsref/dom_obj_event.asp
