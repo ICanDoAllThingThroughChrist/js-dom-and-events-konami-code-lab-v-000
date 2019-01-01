@@ -1,5 +1,7 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 //You'll want to attach an event listener to document.body and 
+document.body.addEventListener('keydown',function(e))
+//https://www.w3schools.com/jsref/dom_obj_event.asp
 //check for 'keydown' events. If the user enters this special code,
 //pressing all ten of the keys in the correct order,
 //alert() a congratulatory message. However,
