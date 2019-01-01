@@ -4,6 +4,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 let index = 0
 document.body.addEventListener('keydown',function(e)
 {
+  console.log(e.which);
   debugger;
 })
 //events parameters: https://www.w3schools.com/jsref/dom_obj_event.asp
