@@ -5,6 +5,8 @@ let index = 0
 document.body.addEventListener('keydown',function(e)
 {
   console.log(e.which);
+  const key = parseInt(e.keyCode|| e.which)
+  console.log(key);
   debugger;
 })
 //events parameters: https://www.w3schools.com/jsref/dom_obj_event.asp
