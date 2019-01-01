@@ -7,7 +7,7 @@ function onKeyDownHandler(e) {//https://stackoverflow.com/questions/31626852/how
   //get value of key code from key map
   const key = parseInt(e.keycode||e.which)
   //compare e.which with code
-  if(e.which === code[index]){
+  if(key === code[index]){
     //move to the next key in the code sequence
     index++;
     //if the last key is reached,
