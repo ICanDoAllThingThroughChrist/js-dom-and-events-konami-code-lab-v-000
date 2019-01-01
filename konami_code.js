@@ -5,21 +5,19 @@ function init() {
 let index = 0
 document.body.addEventListener('keydown',function(e)
 {
-  console.log(e.which);
-  const key = parseInt(e.keyCode|| e.which)
-  console.log(key);
-  debugger;
-  console.log(code[index])
-  if(key === code[index]){
+  //get value of key code from key map
+  var key = code[e.keycode]
+  //compare e.which with code
+  if(e.which === code[index]){
+    //move to the next key in the code sequence
     index++;
-  console.log(index);
-      if(index === code.length){
-        console.log(index)
-        console.log(code.length)
-        alert("Hurray!")
-      }
-  else
-    { index = 0;}
+    //if the last key is reached,
+    if(index === code.length){
+      //alert congratulatory
+      alert('you found the code');
+    }
+  } else {
+    index = 0
   }
 });
   // Write your JavaScript code inside the init() function
