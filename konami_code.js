@@ -12,9 +12,10 @@ document.body.addEventListener('keydown',function(e)
     //move to the next key in the code sequence
     index++;
     //if the last key is reached,
-    if(index === code.length){
+    if (index === code.length){
       //alert congratulatory
       alert('you found the code');
+      index = 0;
     }
   } else {
     index = 0
